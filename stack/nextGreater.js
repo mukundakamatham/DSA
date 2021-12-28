@@ -24,7 +24,7 @@ function runProgram(input) {
     findit(array);
   }
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`1
     4
     1 3 2 4`);

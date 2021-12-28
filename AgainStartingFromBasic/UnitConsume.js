@@ -19,7 +19,7 @@ function runProgram(input) {
   }
   console.log(n);
 }
-if (process.env.USERNAME === "Dharmesh") {
+if (process.env.USERNAME === "MUKUNDH") {
   runProgram(`930`);
 } else {
   process.stdin.resume();

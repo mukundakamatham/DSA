@@ -27,7 +27,7 @@ function runProgram(input) {
        console.log(flag);
     }
   }
-  if (process.env.USERNAME === "Dharmesh") {
+  if (process.env.USERNAME === "MUKUNDH") {
     runProgram(`3
     3
     1 2 3
@@ -54,4 +54,3 @@ function runProgram(input) {
     });
   }
   
-  console.log('hey');

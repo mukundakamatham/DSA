@@ -26,7 +26,7 @@ function runProgram(input) {
     findit(arr) ? console.log("balanced") : console.log("not balanced");
   }
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`3
   (
   {
