@@ -29,7 +29,7 @@ function runProgram(input) {
   findit(array, l, h);
   console.log(array.join(" "));
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`5
     3 5 0 9 8`);
 } else {
