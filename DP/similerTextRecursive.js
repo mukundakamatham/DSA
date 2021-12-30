@@ -29,7 +29,7 @@ function runProgram(input) {
   let n = str2.length;
   console.log(findit(str1, str2, m, n));
 }
-if (process.env.USERNAME === "Dharmesh") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`AEDFHR
     ABCDGH`);
 } else {

@@ -6,7 +6,7 @@ const findit = (current, array, res) => {
     swap(array, i, current);
     findit(current + 1, array, res);
     swap(array, i, current);
-  }
+  } 
   return res;
 };
 
@@ -27,7 +27,7 @@ function runProgram(input) {
     console.log(x[i]);
   }
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`3
     1 2 3`);
 } else {

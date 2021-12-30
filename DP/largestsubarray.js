@@ -3,28 +3,45 @@ function runProgram(input) {
     var arr = input.trim().split("\n")
     var a=arr[0].trim().split(" ").map(Number)
     var line=1;
-    // let ar=new Array(a[0]).fill(-1)
  for (let i = 0; i < a[0]; i++) {
     var b=arr[line].trim().split(" ").map(Number);line++
+    var c=arr[line].trim().split(" ").map(Number);line++
+    let ar=new Array(b[0]).fill(-1)
 
     
-    console.log(findit(b[0]));
+    console.log(findit(c,ar));
 
 
  }
    
 }
-function findit(n){
+function findit(n,dp){
     
-    if(n < 0) return 0;
-    if(n == 0) return 1;
-    return findit(n-4) +  findit(n-8)
+   var sum=0;
 
+for (let j = 0; j < n.length; j++) {
+   // console.log(n[j]);
+    if (dp[j] != -1) return dp[n];
+    else{
+       
+sum=sum+n[j];
+if(sum<0){
+    sum=0;
+}
+dp[j]=sum
+}
+    }
+return Math.max(...dp)
 }
   
   if (process.env.USERNAME === 'mukesh') {
-    runProgram(`1
-    12`);
+    runProgram(`3
+    3
+    1 2 3
+    4
+    -1 -1 0 1
+    3
+    2 -1 2`);
   } else {
     process.stdin.resume();
     process.stdin.setEncoding("ascii");
