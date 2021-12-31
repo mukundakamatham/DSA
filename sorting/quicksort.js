@@ -4,6 +4,7 @@ function findit(array, l, h) {
     findit(array, l, pivot - 1);
     findit(array, pivot + 1, h);
   }
+  return array
 }
 function partition(array, l, h) {
   let pivot = array[l];
@@ -24,9 +25,9 @@ function runProgram(input) {
   input = input.trim().split("\n");
   let n = +input[0];
   let array = input[1].trim().split(" ").map(Number);
-  findit(array, 0, 4);
+console.log(  findit(array, 0, array.length-1).join(" "));;
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`5
       3 5 0 9 8`);
 } else {

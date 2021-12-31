@@ -28,6 +28,7 @@ const merge = (l1, l2) => {
     let mid = Math.floor(array.length/2)
     let left = findit(array.slice(0,mid))
     let right = findit(array.slice(mid))
+    //console.log(mid,left,right,"ckeck");
    return merge(left,right)
   };
   
@@ -35,9 +36,9 @@ const merge = (l1, l2) => {
     input = input.trim().split("\n");
     let array = input[1].trim().split(" ").map(Number);
     console.log(findit(array).join(" "));
-    console.log(array.slice(0,2));
+  //  console.log(array.slice(0,2));
   }
-  if (process.env.USERNAME === "adam") {
+  if (process.env.USERNAME === "mukesh") {
     runProgram(`5
     3 5 0 9 8`);
   } else {
