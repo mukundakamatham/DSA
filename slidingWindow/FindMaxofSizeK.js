@@ -14,12 +14,12 @@ console.log(sum);
 
 
 function runProgram(input) {
-   input = input.trim().split('\n')
-   let [n,k] = input[0].trim().split(' ').map(Number)
-   let array = input[1].trim().split(' ').map(Number)
+   let arr = input.trim().split('\n')
+   let [n,k] = arr[0].trim().split(' ').map(Number)
+   let array = arr[1].trim().split(' ').map(Number)
    findit(array,n,k)
   }
-  if (process.env.USERNAME === "adam") {
+  if (process.env.USERNAME === "mukesh") {
     runProgram(`5 3
     3 0 2 9 7`);
   } else {
