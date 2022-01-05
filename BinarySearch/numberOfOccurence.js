@@ -37,7 +37,7 @@ function runProgram(input) {
   let b = upper(array, n, k);
   console.log(b - a + 1);
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`6 3
     2 3 3 3 6 9`);
 } else {

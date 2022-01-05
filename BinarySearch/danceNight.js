@@ -19,7 +19,7 @@ function runProgram(input) {
     findit(m, n, boy, girl);
   }
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`1
   8 10
   124 142 130 179 117 36 191 43

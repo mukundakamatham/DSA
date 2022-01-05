@@ -19,7 +19,7 @@ function runProgram(input) {
     j = array.length - 1;
   console.log(findit(array, i, j, k));
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`10 4
   0 2 4 4 5 5 7 7 9 10`);
 } else {
