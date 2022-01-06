@@ -18,7 +18,7 @@ function runProgram(input) {
   let array = input[1].trim().split(" ").map(Number);
   funk(array, n);
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`5
     3 5 0 9 8`);
 } else {

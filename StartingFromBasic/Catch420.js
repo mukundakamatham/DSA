@@ -11,7 +11,7 @@ function runProgram(input) {
     }
    }flag ? console.log('cought') : console.log('not');
   }
-  if (process.env.USERNAME === "adam") {
+  if (process.env.USERNAME === "mukesh") {
     runProgram(`97420`);
   } else {
     process.stdin.resume();

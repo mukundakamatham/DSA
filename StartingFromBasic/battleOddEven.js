@@ -13,7 +13,7 @@ function runProgram(input) {
     ? console.log("Even")
     : console.log("Odd");
 }
-if (process.env.USERNAME === "Dharmesh") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`4
     1 2 3 4`);
 } else {

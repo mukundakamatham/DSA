@@ -15,7 +15,7 @@ function runProgram(input) {
   Recursive(array, n);
   console.log(array.join(" "));
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`5
     3 5 0 9 8`);
 } else {

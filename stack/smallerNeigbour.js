@@ -19,13 +19,21 @@ function findit(array) {
 
 function runProgram(input) {
   input = input.trim().split("\n");
-  let n = +input[0];
-  let array = input[1].trim().split(" ").map(Number);
-  findit(array);
+  let a = input[0].trim().split(" ").map(Number);
+  var line=1;
+  for (let i = 0; i < a; i++) {
+    let n = input[line].trim().split(" ").map(Number);
+line++
+    let array = input[line].trim().split(" ").map(Number);line++
+
+    findit(array); 
+  }
+  
 }
-if (process.env.USERNAME === "adam") {
-  runProgram(`8
-    39 27 11 4 24 32 32 1`);
+if (process.env.USERNAME === "mukesh") {
+  runProgram(`1
+  8
+  39 27 11 4 24 32 32 1`);
 } else {
   process.stdin.resume();
   process.stdin.setEncoding("ascii");

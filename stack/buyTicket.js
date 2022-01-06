@@ -21,7 +21,7 @@ function runProgram(input) {
     findit(array, stack);
   }
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`5
     E 2
     D

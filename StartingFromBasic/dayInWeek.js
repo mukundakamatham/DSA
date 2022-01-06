@@ -20,7 +20,7 @@ function runProgram(input) {
     }
   }
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`Wednesday
     8`);
 } else {

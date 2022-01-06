@@ -25,7 +25,7 @@ function findit(array,n){
    findit(array,n)
    }
     }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`2
   7
   100 80 60 70 60 75 85

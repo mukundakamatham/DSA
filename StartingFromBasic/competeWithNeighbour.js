@@ -10,7 +10,7 @@ function runProgram(input) {
    if(array[n-1] > array[n-2])count++
    console.log(count);
   }
-  if (process.env.USERNAME === "adam") {
+  if (process.env.USERNAME === "mukesh") {
     runProgram(`2
     4 5`);
   } else {

@@ -12,7 +12,7 @@ function runProgram(input) {
    if(res.length == 0)console.log(-1);
    else console.log(res[0][1]);
   }
-  if (process.env.USERNAME === "adam") {
+  if (process.env.USERNAME === "mukesh") {
     runProgram(`5
     14 7 8 2 4`);
   } else {

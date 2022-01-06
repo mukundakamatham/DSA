@@ -8,7 +8,7 @@ function runProgram(input) {
   }
   console.log(str.length - count);
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`masaischool`);
 } else {
   process.stdin.resume();
