@@ -33,7 +33,7 @@ function runProgram(input) {
     findit(n, mat);
   }
 }
-if (process.env.USERNAME === "Dharmesh") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`5
     2
     11

@@ -5,3 +5,6 @@ setTimeout(()=>{
 
 console.log('after');
 
+setInterval(() => {
+    console.log("interval");
+}, 2000);
