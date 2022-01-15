@@ -19,7 +19,7 @@ function runProgram(input) {
   let array = input[1].trim().split(" ").map(Number);
   console.log(findit(array, k));
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`10 4
   0 2 4 4 5 5 7 7 9 10`);
 } else {

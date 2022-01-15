@@ -31,7 +31,7 @@ function runProgram(input) {
     traverse(mat, n);
   }
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`1
 3
 1 2 3

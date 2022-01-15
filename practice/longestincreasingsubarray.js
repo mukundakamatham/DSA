@@ -3,12 +3,15 @@
         let arr = input.trim().split('\n')
         let a = arr[0].trim().split(' ').map(Number)
         var line=1;
-   
+   for (let i = 0; i < a; i++) {
+      
          let b = arr[line].trim().split(' ').map(Number);line++;
-        console.log( findit(a[1],b));
+         let c = arr[line].trim().split(' ').map(Number);line++;
+
+        console.log( findit(c));
      
       
-      
+   }
       
        
        }
@@ -17,8 +20,12 @@
  
  
        if (process.env.USERNAME === "mukesh") {
-         runProgram(`4 3
-         abcc`);
+         runProgram(`2
+         2
+         1 1
+         6
+         1 2 1 2 3 1
+         `);
        } else {
          process.stdin.resume();
          process.stdin.setEncoding("ascii");
@@ -40,38 +47,27 @@
        
        
  
-       function findit(k,arr){
+       function findit(arr){
           
-     console.log(k,arr);
+   
  
  
  
  
- 
-         var start = 0;
-         var end = k-1;
- let count=0;
- while (end<arr.length) {
-    let obj={}
-    var temp=true;
-    for (let i = start; i <=end; i++) {
-       // console.log("i",i,"st",start,"en",end,"count",count);
-       if(arr[i] in obj){
-          // console.log(arr[i],"found");
-           temp=false;
+        let i=0
+ let lar=0;
+ while (i<arr.length) {
+   let count=0;
+    for (let j = i; j < arr.length; j++) {
+       if(arr[j]<arr[j+1]){
+           count++
+       }else{
            break
-       } else{
-           obj[arr[i]]=1;
-          // console.log(arr[i],"inside");
        }
     }
-    if(temp){
-        count++
-    }
-     start++;
-     end++;
+ if(lar<count){
+     lar=count;
  }
-        return count 
- 
          }
-         
+         return lar
+        }

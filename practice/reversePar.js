@@ -10,7 +10,7 @@ function runProgram(input) {
   }
   console.log(str.join(""));
 }
-if (process.env.USERNAME === "Dharmesh") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`5
       abcdef
       1 3
