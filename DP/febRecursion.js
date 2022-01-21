@@ -15,7 +15,7 @@ function runProgram(input) {
   }
   console.log(findit(n, res));
 }
-if (process.env.USERNAME === "adam") {
+if (process.env.USERNAME === "mukesh") {
   runProgram(`4`);
 } else {
   process.stdin.resume();
