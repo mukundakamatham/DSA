@@ -1,11 +1,19 @@
+// function findit(arr, current, res) {
+//   if (current == arr.length) res.push(arr.join(" "));
+//   for (let i = current; i < arr.length; i++) {
+//     swap(arr, i, current);
+//     findit(arr, current + 1, res);
+//     swap(arr, i, current);
+//   }
+// }
 function findit(arr, current, res) {
   if (current == arr.length) res.push(arr.join(" "));
   for (let i = current; i < arr.length; i++) {
-    swap(arr, i, current);
+    swap(arr, current,i);
     findit(arr, current + 1, res);
     swap(arr, i, current);
   }
-}
+}   
 function swap(arr, i, j) {
   let temp = arr[i];
   arr[i] = arr[j];
