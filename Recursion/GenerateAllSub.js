@@ -11,7 +11,7 @@ function runProgram(input) {
   input = input.trim().split("\n");
   let str = input[1].trim();
   let current = 0;
-  let res = "";6333333333322
+  let res = "";
   findit(str, current, res);
 }
 if (process.env.USERNAME === "mukesh") {
